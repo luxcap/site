@@ -1,0 +1,179 @@
+publishDir = "docs"
+
+
+
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Navigator | Responsive Multipurpose Bootstrap Hugo Template"
+theme = "navigator-hugo"
+summaryLength = 10
+
+# Build robots.txt file
+enableRobotsTXT = true
+# google analytics tracking id
+#googleAnalytics = ""
+
+enableGitInfo = false
+pygmentsCodeFences = true
+
+# Multilangues setup
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir = true
+DefaultContentLanguage = "en"
+
+# Site Params
+[params]
+logo = "images/logo.png"
+
+# Gestion des langues : FR / EN / NL / DE
+[[Params.listeLangues]]
+code = "en"
+[[Params.listeLangues]]
+code = "fr"
+
+# meta data
+author = "DON"
+description = "This is meta description"
+
+# Gestion des langues : FR / EN / NL / DE
+[Languages]
+############ 1 - Site en FRANCAIS
+[Languages.fr]
+weight = 1
+languageCode = "fr-fr"
+title = "FRANCAIS Example site multi-language"
+dateFormat = "2 January 2006"
+
+home = "Home"
+logo = "images/logo.png"
+menufixed = false
+
+footerDescription = "FRANCAIS Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
+
+footerQuicklinkTitle = "FRANCAIS Quick links"
+footerAboutTitle = "FRANCAIS About"
+
+
+# Hero Area Section
+[Languages.fr.params.hero]
+enable  = true
+heading = "FRANCAIS We love to make brands grow"
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+button  = true
+btnText = "Know More"
+btnURL  = "https://themefisher.com/"
+videoThumb = "images/slider/video-player-thumb.jpg"
+videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+
+# About 2 Section
+[Languages.fr.params.aboutSm]
+enable  = true
+title   = "FRANCAIS We have explored the digital landscape with passion for a long time"
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+
+# Blog Section On Homepage
+[Languages.fr.params.blog]
+enable  = true
+topTitle= "OUR UNTOLD STORY"
+title   = "FRANCAIS Blog."
+subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+
+# Call to Action Section on About Page
+[Languages.fr.params.cta]
+enable  = true
+bg      = "images/call-to-action/call-to-action-bg-2.jpg"
+title   = "FRANCAIS Let's Create Something Together"
+subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+btnText = "Nous contacter"
+
+############# 2 - Site en ENGLISH
+[Languages.en]
+weight = 2
+languageCode = "en-us"
+title = "Lux ancaps WIP"
+dateFormat = "January 2, 2006"
+
+home = "Home"
+logo = "images/logo.png"
+menufixed = false
+
+footerDescription = "test36590"
+
+footerQuicklinkTitle = "Quicklinks"
+footerAboutTitle = "About"
+
+
+# Hero Area Section
+[Languages.en.params.hero]
+enable  = true
+heading = "An introduction to anarchy"
+description = "Produced by Chris Cofer, Peter R. Quinones, and Robert Beeler, this documentary goes over the history of anarchist thought and interviews contemporary thinkers."
+
+## Show Button
+#button  = true
+btnText = "Know More"
+btnURL  = "https://themefisher.com/"
+videoThumb = "https://img.youtube.com/vi/XWAEKQjN-yM/0.jpg"
+videoURL   = "https://www.youtube.com/embed/XWAEKQjN-yM"
+
+# About 2 Section
+[Languages.en.params.aboutSm]
+#enable  = true
+title   = "We have explored the digital landscape with passion for a long time"
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+
+# Blog Section On Homepage
+[Languages.en.params.blog]
+enable  = true
+#topTitle= "OUR UNTOLD STORY"
+title   = "Blog"
+subtitle= "A collection of thoughts and guides."
+
+# Blog Section On Homepage
+[Languages.en.params.learn]
+enable  = true
+#topTitle= "OUR UNTOLD STORY"
+title   = "Learning material"
+subtitle= "A collection of thoughts and guides."
+
+
+# Call to Action Section on About Page
+[Languages.en.params.cta]
+enable  = true
+bg      = "images/call-to-action/call-to-action-bg-2.jpg"
+title   = "Let's Create Something Together"
+subtitle= "Per free and open source software tradition, this site's source code is available. Add to it, or fork and modify it yourself!"
+#btnText = "Contact Us"
+
+# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
+
+# Site Menus
+[menu]
+# Navbar Menus
+[[menu.nav]]
+name    = "about"
+url     = "about"
+weight  = 2
+[[menu.nav]]
+name    = "blog"
+url     = "blog"
+weight  = 3
+[[menu.nav]]
+name    = "learn"
+url     = "learn"
+weight  = 4
+[[menu.nav]]
+name    = "contact"
+url     = "contact"
+weight  = 6
+
+
+# Quicklinks
+[[menu.quicklink]]
+name    = "about"
+url     = "about"
+weight  = 1
+[[menu.quicklink]]
+name    = "faqs"
+url     = "about"
+weight  = 2
