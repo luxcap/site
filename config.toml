@@ -112,12 +112,6 @@ btnURL  = "https://themefisher.com/"
 videoThumb = "https://img.youtube.com/vi/XWAEKQjN-yM/0.jpg"
 videoURL   = "https://www.youtube.com/embed/XWAEKQjN-yM"
 
-# About 2 Section
-[Languages.en.params.aboutSm]
-#enable  = true
-title   = "We have explored the digital landscape with passion for a long time"
-description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
-
 # Blog Section On Homepage
 [Languages.en.params.blog]
 enable  = true
@@ -125,7 +119,13 @@ enable  = true
 title   = "Blog"
 subtitle= "A collection of thoughts and guides."
 
-# Blog Section On Homepage
+# About 2 Section
+[Languages.en.params.aboutSm]
+#enable  = true
+title   = "test8701923"
+description = "Lorem ipsum 890723"
+
+# Learn Section On Homepage
 [Languages.en.params.learn]
 enable  = true
 #topTitle= "OUR UNTOLD STORY"
